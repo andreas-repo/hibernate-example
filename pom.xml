@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>hibernate-example</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <packaging>war</packaging>
+
+    <developers>
+        <developer>
+            <id>am</id>
+            <name>Andreas Mayer</name>
+            <email>andreas.mayer@gepardec.com</email>
+            <roles>
+                <role>Owner</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+
+        <!-- Build Plugin versions -->
+        <version.plugin.clean>3.0.0</version.plugin.clean>
+        <version.plugin.compiler>3.5.1</version.plugin.compiler>
+        <version.plugin.build-helper>1.10</version.plugin.build-helper>
+        <version.plugin.processor>3.1.0</version.plugin.processor>
+        <version.plugin.dependency>2.10</version.plugin.dependency>
+        <version.plugin.enforcer>1.4.1</version.plugin.enforcer>
+        <version.plugin.jar>2.6</version.plugin.jar>
+        <version.plugin.source>3.0.0</version.plugin.source>
+        <version.plugin.release>2.5.3</version.plugin.release>
+        <version.plugin.resources>2.7</version.plugin.resources>
+        <version.plugin.javadoc>2.10.3</version.plugin.javadoc>
+        <version.plugin.surefire>2.19.1</version.plugin.surefire>
+        <version.plugin.processor>2.2.4</version.plugin.processor>
+        <version.plugin.surefire>2.19.1</version.plugin.surefire>
+        <version.plugin.war>2.6</version.plugin.war>
+        <version.plugin.ejb>2.5.1</version.plugin.ejb>
+        <version.plugin.liquibase>3.5.3</version.plugin.liquibase>
+        <version.plugin.exec>1.5.0</version.plugin.exec>
+        <version.plugin.gmavenplus>1.5</version.plugin.gmavenplus>
+
+        <!-- Build Properties -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.min.version>3.0</maven.min.version>
+        <jdk.min.version>${maven.compiler.source}</jdk.min.version>
+        <downloadSources>true</downloadSources>
+        <targetJdk>${maven.compiler.target}</targetJdk>
+        <useReleaseProfile>false</useReleaseProfile>
+
+        <!-- Dependencies Versions -->
+        <!-- Dependencies Versions Specifications -->
+        <version.javaee-api>7.0</version.javaee-api>
+
+        <!-- Dependencies Logger -->
+        <version.log4j>1.2.17</version.log4j>
+        <version.slf4-log4j>1.7.21</version.slf4-log4j>
+
+        <version.weld>3.0.0.Final</version.weld>
+        <version.primefaces>6.1</version.primefaces>
+        <version.omnifaces>2.6.6</version.omnifaces>
+        <version.primefaces-all-themes>1.0.8</version.primefaces-all-themes>
+    </properties>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.jboss.weld.se</groupId>
+            <artifactId>weld-se-core</artifactId>
+            <version>${version.weld}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mariadb.jdbc</groupId>
+            <artifactId>mariadb-java-client</artifactId>
+            <version>2.7.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.4.21.Final</version>
+        </dependency>
+
+    </dependencies>
+
+
+</project>
